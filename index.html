@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script>
+(function(){
+  var HISTORICAL_PRICES = [{"zone": "1", "crop_year": "2558/59", "price": 982.1823}, {"zone": "2", "crop_year": "2558/59", "price": 949.1517}, {"zone": "3", "crop_year": "2558/59", "price": 944.1795}, {"zone": "4", "crop_year": "2558/59", "price": 952.7365}, {"zone": "5", "crop_year": "2558/59", "price": 837.9063}, {"zone": "6", "crop_year": "2558/59", "price": 964.2291}, {"zone": "7", "crop_year": "2558/59", "price": 945.6238}, {"zone": "9", "crop_year": "2558/59", "price": 1026.9393}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2558/59", "price": 984.5775}, {"zone": "1", "crop_year": "2559/60", "price": 1242.1153}, {"zone": "2", "crop_year": "2559/60", "price": 1173.2552}, {"zone": "3", "crop_year": "2559/60", "price": 1250.5669}, {"zone": "4", "crop_year": "2559/60", "price": 1155.3663}, {"zone": "5", "crop_year": "2559/60", "price": 1124.7504}, {"zone": "6", "crop_year": "2559/60", "price": 1151.2286}, {"zone": "7", "crop_year": "2559/60", "price": 1220.3194}, {"zone": "9", "crop_year": "2559/60", "price": 1279.7158}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2559/60", "price": 1231.7179}, {"zone": "1", "crop_year": "2560/61", "price": 901.7818}, {"zone": "2", "crop_year": "2560/61", "price": 855.7957}, {"zone": "3", "crop_year": "2560/61", "price": 893.3743}, {"zone": "4", "crop_year": "2560/61", "price": 873.929}, {"zone": "5", "crop_year": "2560/61", "price": 860.2243}, {"zone": "6", "crop_year": "2560/61", "price": 916.8305}, {"zone": "7", "crop_year": "2560/61", "price": 885.9766}, {"zone": "9", "crop_year": "2560/61", "price": 945.4091}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2560/61", "price": 908.0261}, {"zone": "1", "crop_year": "2561/62", "price": 765.9052}, {"zone": "2", "crop_year": "2561/62", "price": 724.9883}, {"zone": "3", "crop_year": "2561/62", "price": 778.4939}, {"zone": "4", "crop_year": "2561/62", "price": 739.6683}, {"zone": "5", "crop_year": "2561/62", "price": 724.4959}, {"zone": "6", "crop_year": "2561/62", "price": 753.6574}, {"zone": "7", "crop_year": "2561/62", "price": 787.3724}, {"zone": "9", "crop_year": "2561/62", "price": 830.7449}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2561/62", "price": 789.0049}, {"zone": "1", "crop_year": "2562/63", "price": 1019.0484}, {"zone": "2", "crop_year": "2562/63", "price": 933.4035}, {"zone": "3", "crop_year": "2562/63", "price": 930.2754}, {"zone": "4", "crop_year": "2562/63", "price": 902.0905}, {"zone": "5", "crop_year": "2562/63", "price": 869.2675}, {"zone": "6", "crop_year": "2562/63", "price": 968.0601}, {"zone": "7", "crop_year": "2562/63", "price": 964.2677}, {"zone": "9", "crop_year": "2562/63", "price": 1013.0864}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2562/63", "price": 967.5611}, {"zone": "1", "crop_year": "2563/64", "price": 1206.4333}, {"zone": "2", "crop_year": "2563/64", "price": 1090.7445}, {"zone": "3", "crop_year": "2563/64", "price": 1160.5076}, {"zone": "4", "crop_year": "2563/64", "price": 1094.1175}, {"zone": "5", "crop_year": "2563/64", "price": 1113.7356}, {"zone": "6", "crop_year": "2563/64", "price": 1160.5386}, {"zone": "7", "crop_year": "2563/64", "price": 1213.4444}, {"zone": "9", "crop_year": "2563/64", "price": 1232.1024}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2563/64", "price": 1177.4925}, {"zone": "1", "crop_year": "2564/65", "price": 1334.1677}, {"zone": "2", "crop_year": "2564/65", "price": 1186.9775}, {"zone": "3", "crop_year": "2564/65", "price": 1227.7475}, {"zone": "4", "crop_year": "2564/65", "price": 1153.8612}, {"zone": "5", "crop_year": "2564/65", "price": 1250.4192}, {"zone": "6", "crop_year": "2564/65", "price": 1290.7318}, {"zone": "7", "crop_year": "2564/65", "price": 1278.6536}, {"zone": "9", "crop_year": "2564/65", "price": 1364.2306}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2564/65", "price": 1286.6337}, {"zone": "1", "crop_year": "2565/66", "price": 1473.7206}, {"zone": "2", "crop_year": "2565/66", "price": 1334.1494}, {"zone": "3", "crop_year": "2565/66", "price": 1424.8616}, {"zone": "4", "crop_year": "2565/66", "price": 1412.5771}, {"zone": "5", "crop_year": "2565/66", "price": 1404.0892}, {"zone": "6", "crop_year": "2565/66", "price": 1450.6099}, {"zone": "7", "crop_year": "2565/66", "price": 1452.515}, {"zone": "9", "crop_year": "2565/66", "price": 1464.5377}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2565/66", "price": 1434.8135}, {"zone": "1", "crop_year": "2566/67", "price": 1668.4495}, {"zone": "2", "crop_year": "2566/67", "price": 1415.1576}, {"zone": "3", "crop_year": "2566/67", "price": 1567.4194}, {"zone": "4", "crop_year": "2566/67", "price": 1405.7068}, {"zone": "5", "crop_year": "2566/67", "price": 1466.9697}, {"zone": "6", "crop_year": "2566/67", "price": 1532.4584}, {"zone": "7", "crop_year": "2566/67", "price": 1608.6436}, {"zone": "9", "crop_year": "2566/67", "price": 1703.9012}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2566/67", "price": 1603.4932}, {"zone": "1", "crop_year": "2567/68", "price": 1362.9171}, {"zone": "2", "crop_year": "2567/68", "price": 1207.0455}, {"zone": "3", "crop_year": "2567/68", "price": 1318.966}, {"zone": "4", "crop_year": "2567/68", "price": 1235.7621}, {"zone": "5", "crop_year": "2567/68", "price": 1250.3039}, {"zone": "6", "crop_year": "2567/68", "price": 1320.0513}, {"zone": "7", "crop_year": "2567/68", "price": 1308.6464}, {"zone": "9", "crop_year": "2567/68", "price": 1396.4766}, {"zone": "เฉลี่ยทั่วประเทศ", "crop_year": "2567/68", "price": 1333.7384}];
+  var _fetch = window.fetch ? window.fetch.bind(window) : null;
+  window.fetch = function(input, init){
+    var url = typeof input === "string" ? input : (input && input.url) || "";
+    if (url.indexOf("/rest/v1/historical_prices") !== -1) {
+      var body = JSON.stringify(HISTORICAL_PRICES);
+      return Promise.resolve(new Response(body, {status:200, headers:{
+        "Content-Type":"application/json",
+        "Content-Range":"0-" + (HISTORICAL_PRICES.length-1) + "/" + HISTORICAL_PRICES.length
+      }}));
+    }
+    return _fetch ? _fetch(input, init) : Promise.reject(new Error("offline"));
+  };
+})();
+</script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thai Sugarcane Price Calculator</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <script type="module" crossorigin src="./assets/index-BCdf6YAd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index--63_Fn2p.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
